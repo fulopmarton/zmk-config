@@ -8,11 +8,15 @@
 
 &kscan0 {
     col-gpios
-        = <&gpio0 6 GPIO_ACTIVE_HIGH>
-        , <&gpio0 8 GPIO_ACTIVE_HIGH>
-        , <&gpio0 20 GPIO_ACTIVE_HIGH>
-        , <&gpio0 22 GPIO_ACTIVE_HIGH>
-        , <&gpio0 24 GPIO_ACTIVE_HIGH>
-        , <&gpio1 0 GPIO_ACTIVE_HIGH>
+        = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
+
+    debounce-press-ms = <3>;
+    debounce-release-ms = <3>;
+    debounce-scan-period-ms = <1>;
 };
