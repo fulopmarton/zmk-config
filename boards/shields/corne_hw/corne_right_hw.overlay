@@ -24,7 +24,4 @@
         ,  <&gpio0 8 (GPIO_ACTIVE_HIGH )>
         ;
 
-    debounce-press-ms = <3>;
-    debounce-release-ms = <3>;
-    debounce-scan-period-ms = <1>;
 };
