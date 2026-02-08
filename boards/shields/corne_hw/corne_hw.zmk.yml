@@ -11,5 +11,5 @@ features:
   - underglow
   - studio
 siblings:
-  - corne_left
-  - corne_right
+  - corne_left_hw
+  - corne_right_hw
