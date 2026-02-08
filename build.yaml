@@ -21,7 +21,9 @@
 include:
   - board: nice_nano_v2
     shield: corne_left_hw
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
     # pin-map: corne_pins_left.dtsi
   - board: nice_nano_v2
     shield: corne_right_hw
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
     # pin-map: corne_pins_right.dtsi
